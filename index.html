@@ -61,7 +61,7 @@ footer .note{margin:0; color:var(--muted); font-size:14px}
 h2{color:#0284c7;text-transform:uppercase;letter-spacing:.18em;font-size:12px}
 .card{background:transparent;border:0;border-top:1px solid #d6e6f7;border-radius:0;padding:16px 0 0}
 body::before{content:'';display:block;height:5px;background:#0284c7;position:sticky;top:0;z-index:9}
-background-image:repeating-linear-gradient(0deg, transparent 0 39px, #d6e6f7 39px 40px);
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:repeating-linear-gradient(0deg, transparent 0 39px, #d6e6f7 39px 40px)}
 </style>
 </head>
 <body>
@@ -76,7 +76,7 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #d6e6f7 39p
 
 <section class="about" id="about">
   <h2>关于</h2>
-  <p>我大部分时间在做结构化输出兼容相关的事。</p>
+  <p>我大部分时间在做结构化输出兼容相关的事。 当前以博士后 / 研究工程师阶段研究角色的方式推进项目。</p>
   <ul class="traits">
     <li>先讲为什么不用更简单的方案。</li>
     <li>每个决策都标出放弃了什么。</li>
@@ -89,12 +89,20 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #d6e6f7 39p
   <div class="grid two">
     <article class="card">
       <h3>在结构化输出兼容上的判定边界与失效条件</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>结构化输出兼容的判定依据与复核方式</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>结构化输出兼容里容易误判的情形与反例</h3>
+      <span class="status">持续跟进</span>
+    </article>
+    <article class="card">
+      <h3>在推进的问题</h3>
+      <p>（结构化输出兼容场景）结构化输出兼容的成立条件能否被写成可检验的阈值？用结构与协议校验区分「还能用」与「已经不可信」。</p>
+      <span class="status">进行中</span>
     </article>
   </div>
 </section>
@@ -102,6 +110,9 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #d6e6f7 39p
 <section id="work">
   <h2>开源</h2>
   <ul class="repos">
+    <li><div class="name"><a href="https://github.com/snipeylen/schema_ablation_matrix_035d95c3" rel="noopener">schema_ablation_matrix_035d95c3</a></div>
+      <div class="desc">（结构化输出兼容场景）结构化输出兼容的成立条件能否被写成可检验的阈值？用结构与协议校验区分「还能用」与「已经不可信」。</div>
+    </li>
     <li><div class="name"><a href="https://github.com/snipeylen/structcompat" rel="noopener">structcompat</a></div>
       <div class="desc">逐模型验证结构化输出的支持情况，标出降级方案</div>
     </li>
